@@ -27,18 +27,33 @@ In the last copuple of decades, many open source applications started to emerge 
 of famouse ones are Apache Hadoop, Apach Spark and the likes. Today many exterprises use these frameowrks to process
 their data. 
 
+![Big Data Framework Blueprint](https://github.com/fairDataSociety/fairOS/blob/master/doc/images/Big%20Data%20Framework.png)
+
+The above diagram shows the basic blueprint of a Big Data Processing Framework. It contains two layers. The lower layer 
+binds together the storage of all the computers involved, in to a Distributed File System (Ex: HDFS) and the upper layer
+taker care of the programming paradigm required to split the data and process it (ex: MapReduce). They usually have weak
+consesus which are non byzantine fault tolerant. 
+
 The issues with this applications are, that following
 - They give rise to data silos
 - They are not Byzantine fault tolerant
 - The data is owned by the organization and not by the user
 - External auditing is not possible
 
+### Internet Computer Blueprint
+
+![Internet Computer](https://github.com/fairDataSociety/fairOS/blob/master/doc/images/Internet%20Computer.png)
+
+The above diagram shows a blue print of a Internet Computer which has a Operating System that glues the web3.0 storage
+layer with the already existing Big Data Frameworks. This requires that the storage layer is cmopatible with these frameworks
+at the same time make the entire system Byzantine fault tolerant by introducing blockchain for consensus.
+
 ### What is FairOS
 
 FairOS is a glue that runs web-2.0 Big Data Frameworks(like Hadoop, Spark etc.) on web-3.0 storage systems(Swarm). 
 It has 2 layers, namely
-- FairOS-dfs
-- FairOS-engine  
+- ![FairOs-dfs](https://github.com/fairDataSociety/fairOS-dfs)
+- ![FairOs-engine](https://github.com/fairDataSociety/fairOS-engine)
 
 ##### FairOS-dfs 
 The Decentralsied File System(dfs) is a stateless layer over Swarm. It uses the building blocks provided by Swarm and exposes
