@@ -56,4 +56,5 @@ the Internet.
 
 ### Architecture
 
+![Test Image 4](https://github.com/fairDataSociety/fairOS/blob/master/doc/images/FairOS-Architecture.png)
 
